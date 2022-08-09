@@ -1,0 +1,34 @@
+{
+  "RootNamespace": "TestMenuProject",
+  "ServerTypings": {
+    "LocalTexts": true
+  },
+  "Restore": {
+    "Exclude": [
+      "/wwwroot/Scripts/serenity/Serenity.CoreLib*.*"
+    ]
+  },
+  "Connections": [
+    {
+      "Key": "Default",
+      "Tables": [
+        {
+          "Tablename": "test.Country",
+          "Identifier": "Country",
+          "Module": "Master",
+          "PermissionKey": "Master:Country"
+        },
+        {
+          "Tablename": "test.Employee",
+          "Identifier": "Employee",
+          "Module": "Master",
+          "PermissionKey": "Master:Employee"
+        }
+      ]
+    }
+  ],
+  "UpgradeInfo": {
+    "InitialType": "Community",
+    "InitialVersion": "5.0.51.8"
+  }
+}
